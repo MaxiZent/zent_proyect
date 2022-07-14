@@ -1,0 +1,71 @@
+@import "../base/variables";
+
+.hea_der {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .imglogo {
+            margin: 2px;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: auto;
+
+            li {
+                padding-bottom: 25px;
+                border: 2px solid $violet;
+                margin: 10px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                padding: 5px 12px;
+                font-size: 1.25em;
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: rgba(132, 34, 224, 0.671);
+                }
+
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hea_der {
+        height: auto;
+
+        .container {
+            flex-direction: column;
+
+            nav ul {
+
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}

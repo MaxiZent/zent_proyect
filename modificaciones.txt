@@ -1,0 +1,7 @@
+agregué mixin fuentes
+agrege each (nose si esta bien)
+borré codigos y clases innecesarios o no utilizados en los html y scss
+agregué favicon
+agregué keywords en cada una de las páginas
+agregué descripción del sitio en cada una de las páginas
+reduje peso de cada una de las imágenes
