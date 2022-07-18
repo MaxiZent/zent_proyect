@@ -19,56 +19,85 @@
 </head>
 
 <body>
-    <header class="hea_der">
-        <div class="container">
-            <img class="imglogo" src="../img/zentlogo.png" alt="">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./cuadros.html">Cuadros</a></li>
-                    <li><a href="./posters.html">Posters</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li> <a href="./nosotros.html">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-        <section>
-            <div class="container">
-                <h5 class="titulo-contacto text-center m-5"><strong>¡CONTÁCTANOS!</strong></h5>
-                <div class="row mt-5">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                </div>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                        style="height: 150px"></textarea>
-                    <label class="text-muted" for="floatingTextarea2">Mensaje...</label>
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-dark mt-3 boton-enviar-contacto">Enviar</button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/zentlogo.png" width="75px" height=""
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cuadros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./cuadros.html">Anime</a></li>
+                                <li><a class="dropdown-item" href="./cuadros.html">Deco</a></li>
+                                <li><a class="dropdown-item" href="./cuadros.html">Musicales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./posters.html">Posters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h5 class="titulo-contacto text-center m-5"><strong>¡CONTÁCTANOS!</strong></h5>
+            <div class="row mt-5">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+            </div>
 
-        <section id="final">
-            <h2>Gracias por visitar nuestra pagina</h2>
-        </section>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 150px"></textarea>
+                <label class="text-muted" for="floatingTextarea2">Mensaje...</label>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-dark mt-3 boton-enviar-contacto">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Gracias por visitar nuestra pagina</h2>
+    </section>
 
     <footer>
         <div class="container">
+            <a href="./index.html"><img class="logo" src="../img/zentlogo.png" alt="Zent logo"></a>
+            <p>&copy; ZENT IMPRESIONES &copy; Todos los derechos reservados. 2022</p>
+
             <div>
-                <p>&copy; ZENT IMPRESIONES &copy; Todos los derechos reservados. 2022</p>
+                <a href="https://www.instagram.com/zent.impresiones/"><img src="../img/instagram.png"
+                        alt="logo instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100075594455470"><img src="../img/facebook (2).png"
+                        alt="logo facebook"></a>
+                <a href="mailto:zentimpresiones@gmail.com"><img src="../img/Gmail.png" alt="logo gmail"></a>
             </div>
         </div>
     </footer>

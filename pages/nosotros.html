@@ -21,25 +21,89 @@
 </head>
 
 <body>
-    
-    <header class="hea_der">
-        <div class="container">
-            <img class="imglogo" src="../img/zentlogo.png" alt="">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./cuadros.html">Cuadros</a></li>
-                    <li><a href="./posters.html">Posters</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li> <a href="./nosotros.html">Nosotros</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/zentlogo.png" width="75px" height="" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cuadros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cuadros.html">Anime</a></li>
+                            <li><a class="dropdown-item" href="./cuadros.html">Deco</a></li>
+                            <li><a class="dropdown-item" href="./cuadros.html">Musicales</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./posters.html">Posters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
-    
-    <main>
- 
-    </main>
+    </nav>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      
+
+      <div class="container">
+        <h2 class="text-center m-5">Nuestros Productos</h2>
+        <div class="row justify-content-md-center gy-3">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-10 card-index-a">
+                    <img src="./img/CuadrosRock.jpg" class="card-img-top" alt="Cuadros de rock">
+                    <div class="card-body">
+                        <h3> CUADROS</h3>
+                        <p class="card-text h5">Medidas disponibles: 33x24cm 15x21cm 20x20cm. Lamina impresa en
+                            papel fotografico 250Gr.</p>
+                        <a href="./pages/cuadros.html" class="btn btn-secondary boton-ver_noticias">Ver +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 card-index-b">
+                    <img src="./img/wanted.png">
+                    <div class="card-body">
+                        <h3 class="card-text">POSTERS</h3>
+                        <p class="card-text h5"> Impresos en papel fotografico microporoso 250gr. Immpresion sin
+                            margenes.</p>
+                        <a href="./pages/posters.html" class="btn btn-secondary boton-ver_noticias">Ver +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 card-index-c">
+                    <img src="./img/camarapolaroid.jpg" class="card-img-top" alt="imgpolaroid">
+                    <div class="card-body">
+                        <h3 class="card-text"> IMPRESION DE FOTOS</h3>
+                        <p class="card-text h5">Realizamos impresiones de fotograficas de distintas medidas o en
+                            estilo Polaroid.</p>
+                        <a href="./pages/posters.html" class="btn btn-secondary boton-ver_noticias">Ver +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="final">
         <h2>¿Alguna imagen que quieras en cuadro?</h2>

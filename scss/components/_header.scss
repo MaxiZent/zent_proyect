@@ -1,71 +1,40 @@
 @import "../base/variables";
 
-.hea_der {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(245, 245, 245);
+/***********HEADER**********/
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        .imglogo {
-            margin: 2px;
-            width: 80px;
-            height: 80px;
-            cursor: pointer;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            align-items: center;
-            flex-direction: row;
-            justify-content: flex-end;
-            margin: auto;
-
-            li {
-                padding-bottom: 25px;
-                border: 2px solid $violet;
-                margin: 10px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-                padding: 5px 12px;
-                font-size: 1.25em;
-
-                &:hover {
-                    transform: scale(1.1);
-                    background-color: rgba(132, 34, 224, 0.671);
-                }
-
-                a {
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: black;
-                }
-            }
-        }
-    }
+#navbarNavDropdown {
+    justify-content: flex-end;
 }
 
-@media screen and (max-width: 480px) {
+.navbar {
+    background-color: #f7f7f7;
+}
 
-    .hea_der {
-        height: auto;
+.navbar-nav .nav-item {
+    padding-bottom: 10px;
+    border: 2px solid blueviolet;
+    margin: 10px;
+    justify-content: center;
+    font-size: 1.3em;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1px 8px;
+    align-items: center;
+}
 
-        .container {
-            flex-direction: column;
+.navbar-nav .nav-item:hover {
+    background-color: rgba(137, 43, 226, 0.774);
+}
 
-            nav ul {
+.navbar-nav .nav-link {
+    font-weight: bold;
+}
 
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-            }
-        }
-    }
+.dropdown-item {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: black;
 }

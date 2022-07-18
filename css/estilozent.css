@@ -1,3 +1,4 @@
+/**********GENERALES**********/
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -36,65 +37,44 @@ button:hover {
   color: blueviolet;
 }
 
-.hea_der {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(245, 245, 245);
-}
-.hea_der .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.hea_der .container .imglogo {
-  margin: 2px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-}
-.hea_der .container nav ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  flex-direction: row;
+/*********MEDIA Q**********/ /***********HEADER**********/
+#navbarNavDropdown {
   justify-content: flex-end;
-  margin: auto;
 }
-.hea_der .container nav ul li {
-  padding-bottom: 25px;
+
+.navbar {
+  background-color: #f7f7f7;
+}
+
+.navbar-nav .nav-item {
+  padding-bottom: 10px;
   border: 2px solid blueviolet;
   margin: 10px;
   justify-content: center;
-  align-items: center;
+  font-size: 1.3em;
+  margin: 10px;
   border-radius: 10px;
-  padding: 5px 12px;
-  font-size: 1.25em;
+  padding: 1px 8px;
+  align-items: center;
 }
-.hea_der .container nav ul li:hover {
-  transform: scale(1.1);
-  background-color: rgba(132, 34, 224, 0.671);
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(137, 43, 226, 0.774);
 }
-.hea_der .container nav ul li a {
-  text-decoration: none;
+
+.navbar-nav .nav-link {
   font-weight: bold;
+}
+
+.dropdown-item {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
   color: black;
 }
 
-@media screen and (max-width: 480px) {
-  .hea_der {
-    height: auto;
-  }
-  .hea_der .container {
-    flex-direction: column;
-  }
-  .hea_der .container nav ul {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-}
 #hero {
   display: flex;
   align-items: center;
@@ -304,8 +284,7 @@ button:hover {
   #caracteristicas .container {
     align-items: center;
     flex-direction: column;
-    padding: 0px;
-    margin: 20px;
+    padding: 8px;
   }
   #caracteristicas .container img {
     align-items: center;
@@ -318,8 +297,8 @@ button:hover {
     text-align: initial;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    padding-left: 0px;
+    margin: 30px;
+    width: 60%;
   }
   #caracteristicas .container .texto ul {
     align-items: center;
@@ -508,35 +487,57 @@ button:hover {
 }
 
 /**********NOSOTROS**********/
+/**********FOOTER*********/
 footer {
-  background-color: rgb(230, 230, 230);
+  background-color: #f7f7f7;
 }
-
 footer .container {
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-
-footer p {
+footer .container p {
   margin: 0;
   padding: 5px;
   color: rgb(100, 100, 100);
   align-items: center;
   font-size: 15px;
+  cursor: default;
+}
+footer .container img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+footer .container img:hover {
+  transform: scale(1.3);
 }
 
 @media screen and (max-width: 480px) {
   footer .container {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
+  }
+  footer .container .logo {
+    display: none;
   }
   footer .container p {
-    justify-content: center;
+    padding: auto;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  footer .container img {
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    cursor: pointer;
+  }
+  footer .container img:hover {
+    transform: scale(1.1);
   }
 }
 

@@ -19,21 +19,43 @@
 </head>
 
 <body>
-    <header class="hea_der">
-        <div class="container">
-            <img class="imglogo" src="../img/zentlogo.png" alt="">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./cuadros.html">Cuadros</a></li>
-                    <li><a href="./posters.html">Posters</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li> <a href="./nosotros.html">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/zentlogo.png" width="75px" height=""
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cuadros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./cuadros.html">Anime</a></li>
+                                <li><a class="dropdown-item" href="./cuadros.html">Deco</a></li>
+                                <li><a class="dropdown-item" href="./cuadros.html">Musicales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./posters.html">Posters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
     <section>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -123,12 +145,17 @@
             <button>¡CONTÁCTANOS!</button>
         </section>
 
-
         <footer>
             <div class="container">
+                <a href="./index.html"><img class="logo" src="../img/zentlogo.png" alt="Zent logo"></a>
+                <p>&copy; ZENT IMPRESIONES &copy; Todos los derechos reservados. 2022</p>
+
                 <div>
-                    <img src="" alt="">
-                    <p>&copy; ZENT IMPRESIONES &copy; Todos los derechos reservados. 2022</p>
+                    <a href="https://www.instagram.com/zent.impresiones/"><img src="../img/instagram.png"
+                            alt="logo instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100075594455470"><img src="../img/facebook (2).png"
+                            alt="logo facebook"></a>
+                    <a href="mailto:zentimpresiones@gmail.com"><img src="../img/Gmail.png" alt="logo gmail"></a>
                 </div>
             </div>
         </footer>

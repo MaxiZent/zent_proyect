@@ -124,7 +124,6 @@
         flex-wrap: wrap;
 
         .card {
-
             background-color: #f7f7f7;
             border-radius: 20px;
             overflow: hidden;
@@ -255,8 +254,7 @@
         .container {
             align-items: center;
             flex-direction: column;
-            padding: 0px;
-            margin: 20px;
+            padding: 8px;
 
             img {
                 align-items: center;
@@ -270,8 +268,8 @@
                 text-align: initial;
                 justify-content: center;
                 align-items: center;
-                width: 50%;
-                padding-left: 0px;
+                margin: 30px;
+                width: 60%;
 
                 ul {
                     align-items: center;

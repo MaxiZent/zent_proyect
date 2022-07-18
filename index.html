@@ -21,19 +21,42 @@
 </head>
 
 <body>
-    <header class="hea_der">
-        <div class="container">
-            <img class="imglogo" src="./img/zentlogo.png" alt="">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./pages/cuadros.html">Cuadros</a></li>
-                    <li><a href="./pages/posters.html">Posters</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="../img/zentlogo.png" width="75px" height=""
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cuadros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./pages/cuadros.html">Anime</a></li>
+                                <li><a class="dropdown-item" href="./pages/cuadros.html">Deco</a></li>
+                                <li><a class="dropdown-item" href="./pages/cuadros.html">Musicales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/posters.html">Posters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section id="hero">
@@ -52,12 +75,13 @@
     </section>
 
     <section id="nuestros-productos">
+
         <div class="container">
             <h2 class="text-center m-5">Nuestros Productos</h2>
             <div class="row justify-content-md-center gy-3">
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-10 card-index-a">
-                        <img src="./img/CuadrosRock.jpg" class="card-img-top" alt="Cadros de rock">
+                        <img src="./img/CuadrosRock.jpg" class="card-img-top" alt="Cuadros de rock">
                         <div class="card-body">
                             <h3> CUADROS</h3>
                             <p class="card-text h5">Medidas disponibles: 33x24cm 15x21cm 20x20cm. Lamina impresa en
@@ -71,14 +95,15 @@
                         <img src="./img/wanted.png">
                         <div class="card-body">
                             <h3 class="card-text">POSTERS</h3>
-                            <p class="card-text h5"> Impresos en papel fotografico microporoso 250gr. Immpresion sin margenes.</p>
+                            <p class="card-text h5"> Impresos en papel fotografico microporoso 250gr. Immpresion sin
+                                margenes.</p>
                             <a href="./pages/posters.html" class="btn btn-secondary boton-ver_noticias">Ver +</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-100 card-index-c">
-                        <img src="./img/camarapolaroid.jpg" class="card-img-top" alt="Videos curiosos sobre gatos">
+                        <img src="./img/camarapolaroid.jpg" class="card-img-top" alt="imgpolaroid">
                         <div class="card-body">
                             <h3 class="card-text"> IMPRESION DE FOTOS</h3>
                             <p class="card-text h5">Realizamos impresiones de fotograficas de distintas medidas o en
@@ -114,9 +139,17 @@
 
     <footer>
         <div class="container">
+            <a href="./index.html"><img class="logo" src="./img/zentlogo.png" alt="Zent logo"></a>
+            <p>&copy; ZENT IMPRESIONES &copy; Todos los derechos reservados. 2022</p>
+
             <div>
-                <p>&copy; ZENT IMPRESIONES &copy; Todos los derechos reservados. 2022</p>
+                <a href="https://www.instagram.com/zent.impresiones/"><img src="./img/instagram.png"
+                        alt="logo instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100075594455470"><img src="./img//facebook (2).png"
+                        alt="logo facebook"></a>
+                <a href="mailto:zentimpresiones@gmail.com"><img src="./img/Gmail.png" alt="logo gmail"></a>
             </div>
+        </div>
     </footer>
     <!--JAVA de Boots-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
