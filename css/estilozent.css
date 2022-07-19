@@ -105,6 +105,16 @@ button:hover {
     font-size: 1em;
   }
 }
+@media screen and (max-width: 750px) {
+  #hero h1 {
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+  }
+  #hero button {
+    font-size: 1.2em;
+  }
+}
 #somos-zent .container {
   display: flex;
   justify-content: space-evenly;
@@ -152,6 +162,38 @@ button:hover {
     justify-content: center;
     align-items: center;
     width: 70%;
+    padding-left: 0px;
+  }
+  #somos-zent .container .texto h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  #somos-zent .container .texto p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 575px) {
+  #somos-zent {
+    flex-direction: column;
+  }
+  #somos-zent .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #somos-zent .container .img-container {
+    background-image: url("/img/somos-proya.jpg");
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    width: 200px;
+    margin: 30px;
+  }
+  #somos-zent .container .texto {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     padding-left: 0px;
   }
   #somos-zent .container .texto h2 {
@@ -247,6 +289,47 @@ button:hover {
     padding: 5px 20px;
   }
 }
+@media screen and (max-width: 575px) {
+  #nuestros-productos {
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+  }
+  #nuestros-productos h2 {
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 3em;
+  }
+  #nuestros-productos .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  #nuestros-productos .container .card {
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    text-align: center;
+    cursor: default;
+    width: 350px;
+  }
+  #nuestros-productos .container .card:hover {
+    transform: translateY(-15px);
+  }
+  #nuestros-productos .container .card h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  #nuestros-productos .container .card p {
+    display: none;
+  }
+  #nuestros-productos .container .card a {
+    background-color: blueviolet;
+    margin: 15px;
+    padding: 5px 20px;
+  }
+}
 @media screen and (max-width: 991px) {
   #nuestros-productos {
     background-color: rgb(30, 30, 30);
@@ -255,9 +338,10 @@ button:hover {
   #nuestros-productos h2 {
     text-align: center;
     color: #efefef;
-    font-size: 3.5em;
+    font-size: 3em;
   }
   #nuestros-productos .container {
+    justify-content: center;
     text-align: center;
     padding: 10px;
     flex-wrap: wrap;
@@ -333,7 +417,7 @@ button:hover {
   #caracteristicas .container img {
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 350px;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   }
@@ -351,15 +435,19 @@ button:hover {
     font-size: 1em;
   }
 }
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 575px) {
+  #caracteristicas {
+    flex-direction: column;
+  }
   #caracteristicas .container {
     align-items: center;
     flex-direction: column;
     padding: 8px;
   }
   #caracteristicas .container img {
+    align-items: center;
     justify-content: center;
-    width: 750px;
+    width: 350px;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   }
@@ -368,12 +456,13 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin: 30px;
+    width: 70%;
   }
   #caracteristicas .container .texto ul {
     align-items: center;
   }
   #caracteristicas .container .texto li {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 820px) {
@@ -384,7 +473,7 @@ button:hover {
   }
   #caracteristicas .container img {
     justify-content: center;
-    width: 550px;
+    width: 450px;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   }
@@ -399,6 +488,30 @@ button:hover {
   }
   #caracteristicas .container .texto li {
     font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1055px) {
+  #caracteristicas .container {
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+  }
+  #caracteristicas .container img {
+    justify-content: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  #caracteristicas .container .texto {
+    text-align: initial;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  #caracteristicas .container .texto ul {
+    align-items: center;
+  }
+  #caracteristicas .container .texto li {
+    font-size: 1.4em;
   }
 }
 #final {
@@ -498,7 +611,7 @@ button:hover {
   display: flex;
   margin: 20px;
   margin-top: 5px;
-  flex-direction: nowrap;
+  flex-direction: row;
 }
 .cont-card .card-gral {
   margin: 23px;
@@ -595,14 +708,6 @@ button:hover {
     width: 350px;
   }
 }
-@media screen and (max-width: 480px) {
-  #hero h1 {
-    font-size: 2em;
-  }
-  button {
-    font-size: 1em;
-  }
-}
 /**********CONTACTO**********/
 .container h5 {
   font-size: 3rem;
@@ -671,6 +776,7 @@ footer .container img:hover {
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
   footer .container p {
     padding: auto;
@@ -678,8 +784,8 @@ footer .container img:hover {
     font-size: 12px;
   }
   footer .container img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 2px;
     cursor: pointer;
   }
