@@ -52,8 +52,32 @@ footer {
         }
 
         img {
-            width: 18px;
-            height: 18px;
+            width: 17px;
+            height: 17px;
+            margin: 2px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    footer .container {
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    
+
+        p {
+            padding: auto;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
             margin: 2px;
             cursor: pointer;
 

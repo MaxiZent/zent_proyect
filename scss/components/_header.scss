@@ -23,7 +23,7 @@
 }
 
 .navbar-nav .nav-item:hover {
-    background-color: rgba(137, 43, 226, 0.774);
+    background-color: $violet;
 }
 
 .navbar-nav .nav-link {
@@ -31,7 +31,7 @@
 }
 
 .dropdown-item {
-    color: blueviolet;
+    color: $violet;
     font-weight: bold;
 }
 
