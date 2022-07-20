@@ -60,6 +60,38 @@ footer {
     }
 }
 
+@media screen and (max-width: 510px) {
+
+    footer .container {
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        .logo {
+            display: none;
+        }
+
+        p {
+            padding: auto;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        img {
+            width: 18px;
+            height: 18px;
+            margin: 2px;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 750px) {
 
     footer .container {

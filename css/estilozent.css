@@ -82,12 +82,7 @@ button:hover {
   text-align: center;
   flex-direction: column;
   height: 90vh;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("../img/Attackportada.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Attackportada.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -227,7 +222,7 @@ button:hover {
   align-items: center;
 }
 #nuestros-productos .container .row .card {
-  background-color: #efefef;
+  background-color: #f7f7f7;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.25s ease;
@@ -342,7 +337,7 @@ button:hover {
   }
   #nuestros-productos h2 {
     text-align: center;
-    color: #efefef;
+    color: #f7f7f7;
     font-size: 3em;
   }
   #nuestros-productos .container {
@@ -775,6 +770,32 @@ footer .container img:hover {
     cursor: pointer;
   }
 }
+@media screen and (max-width: 510px) {
+  footer .container {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer .container .logo {
+    display: none;
+  }
+  footer .container p {
+    padding: auto;
+    text-align: center;
+    font-size: 12px;
+  }
+  footer .container img {
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    cursor: pointer;
+  }
+  footer .container img:hover {
+    transform: scale(1.1);
+  }
+}
 @media screen and (max-width: 750px) {
   footer .container {
     flex-direction: row;
@@ -798,4 +819,5 @@ footer .container img:hover {
     transform: scale(1.1);
   }
 }
+
 /*# sourceMappingURL=estilozent.css.map */
