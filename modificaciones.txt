@@ -4,3 +4,4 @@ agregué keywords en cada una de las páginas
 agregué descripción del sitio en cada una de las páginas
 reduje peso de cada una de las imágenes
 commit antes de mediaQ
+arreglando errores
